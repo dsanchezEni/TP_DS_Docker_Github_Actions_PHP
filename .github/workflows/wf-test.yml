@@ -8,5 +8,5 @@ jobs:
         run: echo "Démarrage du jobs"
       - name: Mes premières instructions
         run: ls /
-      - name: Fin du premer Job
+      - name: Fin du premier Job
         run: echo "That's all Folks"
