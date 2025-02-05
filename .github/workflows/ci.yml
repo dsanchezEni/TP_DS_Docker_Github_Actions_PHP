@@ -23,7 +23,7 @@ jobs:
       - name: Mes premières instructions
         run: ls /
       - name: Build Docker image
-        run: docker build . --file ../../Dockerfile --tag demo-app:$(date +%s)
+        run: docker build . --file Dockerfile --tag demo-app:$(date +%s)
 
       - name: Start containers
         run: docker-compose up -d
