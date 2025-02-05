@@ -22,6 +22,10 @@ jobs:
         run: echo "Démarrage du jobs"
       - name: Mes premières instructions
         run: ls
+      - name: Checkout code
+        uses: actions/checkout@v2
+      - name: Mes premières instructions
+        run: ls
       - name: Build Docker image
         run: docker build . --file Dockerfile --tag demo-app:$(date +%s)
 
